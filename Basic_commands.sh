@@ -6,6 +6,14 @@ ls
 ls -l		# Long listing format
 ls /bin		# Check all available commands
 ls --help   # Check help documentation
+ls -t		# list files by time
+ls -r		# reverse order
+ls -latr	# Long listing including all files reverse sorted time
+ls -R		# Recursively
+ls -d		# list directories no content
+ls -a	    # it shows hidden files
+ls -la	    # combines -a and -l
+ls -f	    # to reveal file types
 
 # Change directory
 cd
