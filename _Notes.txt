@@ -1,0 +1,20 @@
+Linux distribution = Linux OS
+The kernel is the core
+linux kernel + apps = distribution
+
+popular are redhat and ubuntu
+centos is redhat but free :P
+centos = thel -branding/logos
+
+/	    root
+/bin	Binaries and other executable programs
+/etc	system configuration files
+/home	Home directories
+/opt	optional or third party software
+/tmp	Temporary space, typically cleared on reboot
+/usr	User related programs
+/var	Variable data, most notably log files
+/mnt	Used to mount external file systems
+/root	The home directory for the root account
+/sbin	System administration binaries
+/tmp	Temporary space
