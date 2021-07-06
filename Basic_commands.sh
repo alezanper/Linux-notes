@@ -44,8 +44,9 @@ cd
 pwd
 
 # concatenates and display files
-cat
-cat -n secret
+cat -n secret				# cat adding numbers for lines
+cat /etc/passwd | more		
+cat /etc/passwd | less
 
 # see variable
 echo

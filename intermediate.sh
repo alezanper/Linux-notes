@@ -75,9 +75,21 @@ alias cls = 'clear'         # alias for clear
 unalias grpe                # remove alias grpe
 unalias -a	                # remove all alias      
 
-persistent .bash_profile
-vi ~/.bash_profile
+#persistent aliases
+vim ~/.bash_profile
 
+# file
+file *                      # Describes files
+file files.txt              # Describe a specific file
 
+# | command
+command-output | command-input
+cat files.txt | grep <pattern>  # read file and check for pattern in cat result
 
+# transform 
+tr <pattern> <pattern2>
+tr ":" " "      # hello:world -> hello world
+
+# multiple commands
+grep admin* /etc/passwd | cut -d: -f1,5 | sort | tr ":" " " | column -t
 
