@@ -36,3 +36,48 @@ ls *[[:digit:]]     # List files ending with digits
 
 # Move
 mv *.txt folder     # Move all txt files to folder
+
+# i/o redirection
+
+# stdin		0
+# stout		1
+# stderr		2
+
+ls -l > files.txt                           # list files with details and save it to a file
+ls -l 1> files.txt		                    # the same as before
+ls >> files.txt		                        # append data to files
+sort < files.txt		                    # load data and sorted
+sort < files.txt > sorted_files.txt         # sort files and save file to a different file
+ls files.txt bot-here 2> out.err            # save errors 
+ls files.txt bot-here 1> out 2> out.err     # save resgular results to out and errors to out.err
+ls files.txt bot-here 1> out.both 2>&1      # append errors to file
+
+# Compare files
+diff file1 file2		    # compare two files
+sdiff file1 file2		    # side-by-side comparison
+vimdifff file1 file2	    # highlight differences in vim
+
+# grep
+grep pattern <filename>
+	-i ignore case
+	-c count number of occurrences
+	-n output with lines where search appears
+	-v invert match
+
+grep cat files.txt          # search cat on files.txt
+grep cat -ci files.txt      # count the word cat ignoring case
+
+
+# aliases
+alias grpe = 'grep'         # alias for grpe
+alias cls = 'clear'         # alias for clear
+
+unalias grpe                # remove alias grpe
+unalias -a	                # remove all alias      
+
+persistent .bash_profile
+vi ~/.bash_profile
+
+
+
+

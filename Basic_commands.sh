@@ -45,6 +45,7 @@ pwd
 
 # concatenates and display files
 cat
+cat -n secret
 
 # see variable
 echo
