@@ -99,3 +99,42 @@ echo $HOME
 export VAR="VALUE"		# without spaces
 export EDITOR="VI"		
 unset VAR				# delete var
+
+# processes
+ps
+	- e 			# everything, all processes
+	- f 			# full format listing
+	- u username	# display username's processes
+	-p pid			# display information for PID
+
+ps -e				# display all processes
+ps -ef				# full processes
+ps -eH				# display process tree
+ps -e --forest		# display process tree
+ps -u <username>	# display username's processes
+
+pstree				# display processes in a tree format
+top					# interactive process viewer
+htop				# interactive process viewer
+
+ps -f
+ps -ef
+ps -fu <user>
+top
+htop
+
+# kill processes
+
+ctrl +c 			# kills the foreground proc
+kill [-sig] pid		# send a signal to a process
+kill -l 			# display a list of signals
+kill 123
+kill -15 123 		# equal to kill -TERM 123
+
+fg
+jobs
+
+fg %2
+ctrl +c to kill it
+
+
