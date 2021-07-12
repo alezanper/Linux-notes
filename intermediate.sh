@@ -131,10 +131,3 @@ kill -l 			# display a list of signals
 kill 123
 kill -15 123 		# equal to kill -TERM 123
 
-fg
-jobs
-
-fg %2
-ctrl +c to kill it
-
-
