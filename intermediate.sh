@@ -93,3 +93,9 @@ tr ":" " "      # hello:world -> hello world
 # multiple commands
 grep admin* /etc/passwd | cut -d: -f1,5 | sort | tr ":" " " | column -t
 
+# environment variables
+printenv				# returns env variables
+echo $HOME	
+export VAR="VALUE"		# without spaces
+export EDITOR="VI"		
+unset VAR				# delete var
