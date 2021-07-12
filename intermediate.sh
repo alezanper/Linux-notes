@@ -131,3 +131,35 @@ kill -l 			# display a list of signals
 kill 123
 kill -15 123 		# equal to kill -TERM 123
 
+# CRON Jobs
+# crontab format
+# run every monday at 7:00
+0 7 * * 1 /opt/sales/bin/weekly-report
+
+# run at 2:00 every day and send output to a log file errors included
+0 2 * * * /root/backupdb > /tmp/db.log 2>&1
+
+# run every 15 minutes
+0,15,30,45 * * * * /opt/acme/bin/15-min-check	# first option
+*/15 * * * * /opt/acme/bin/15-min-check			# second option
+
+# Run for the first 5 minutes of the hour
+0-4 * * * * /opt/acme/bin/first-five-mins
+
+#shortcuts
+@yearly			# 0 0 1 1 *
+@annually		# 0 0 1 1 *
+@monthly		# 0 0 1 * *
+@weekly			# 0 0 * * 0
+@daily 			# 0 0 * * *
+@midnight		# 0 0 * * *
+@hourly 		# 0 * * * *
+
+# Example
+crontab -l
+vi my-cron
+# run every monday at 7:00
+0 7 * * 1 /opt/sales/bin/weekly-report
+
+crontab my-cron		# to install
+crontab -r			# delete cronjobs
