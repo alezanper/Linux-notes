@@ -163,3 +163,24 @@ vi my-cron
 
 crontab my-cron		# to install
 crontab -r			# delete cronjobs
+
+
+# change the sudo configuration
+visudo		# edit the /etc/sudoers file
+
+# sudoers format
+user host=(users) [NOPASSWD:] commands
+someuser ALL=(ALL) NOPASSWD:ALL
+
+# shell history
+~/.batch_history
+~/.history
+~/.histfile
+
+history		# displays the shell history
+HISTSIZE	# Controls the number of commands to retain in history
+export HISTSIZE=1000
+
+!h 			# return the most recent command starting with h
+!!			# run again the previous command
+
