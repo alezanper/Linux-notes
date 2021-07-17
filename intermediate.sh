@@ -184,3 +184,51 @@ export HISTSIZE=1000
 !h 			# return the most recent command starting with h
 !!			# run again the previous command
 
+
+
+# Installing software
+#	rpm distros
+#	RHEL, CentOS, Oracle Linux, AlmaLinux, Rocky Linux
+
+# DEB distros
+# 	Debian, Ubuntu, and Linux Mint
+
+# RPM
+yum search string
+yum info package
+yum info "bash*"
+yum install [-y] package
+yum remove package
+yum upgrade [package]
+
+# rpm for RHEL 8 / CentOS 8 & Later
+
+dnf search nginx
+dnf info package
+dnf info "bash*"
+dnf install [-y] package
+dnf remove package
+dnf upgrade [package]
+
+rpm -qa
+
+# DEB
+# APT (Advanced packaging tool)
+apt-cache
+apt-get
+
+apt-cache search string
+apt-get install [-y] package
+apt-get remove package			# remove package leaving configuration
+apt-get purge package			# remove package, deleting configuration
+apt-cache show package			# display information about package
+apt-get update					# update the local list of remote packages 
+apt-get upgrade [-y]			# upgrade all installed packages
+
+# Can be use:
+apt search
+apt install
+apt purge
+apt update
+apt upgrade
+
